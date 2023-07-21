@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Contas Correntes</h1>
+
+    <dl></dl>
+    <?php
+    require("banco.php");
+    foreach ($ContaCorrente as $cpf => $conta) { ?>
+        <div>
+        <dt>
+            <h3>
+                <?= $conta["Titular"]; ?> - 
+                <?= $cpf; ?>
+            </h3>
+        </dt>
+        <dd>
+            <h4>
+                <?= "Saldo: " .   // <?=  é php, é a mesma coisa que <?php echo 
+                    $conta["Saldo"]; ?>
+            </h4>
+        </dd>
+    <?php } ?><h1>PHP + HTML + CSS</h1>
+    </dl></div>
+</body>
+
+</html>

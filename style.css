@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+h3 {
+    color: blue;
+}
+
+h4 {
+    color: green;
+}
+
+div{
+background-color: rgb(140, 186, 47);
+width: fit-content
+}
